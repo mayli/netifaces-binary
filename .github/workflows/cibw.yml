@@ -1,6 +1,11 @@
 name: Build
 
-on: [push, pull_request]
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Write 'PUBLISH' to publish to pypi. BEWARE! ARTIFACTS ARE IMMUTABLE AND CANNOT BE REPLACED ONCE PUBLISHED!
 
 jobs:
   build_wheels:
