@@ -573,7 +573,7 @@ readme_path = os.path.join(os.path.abspath(os.path.dirname(__file__)),
 with open(readme_path, 'r') as fp:
     long_desc = fp.read()
 
-setup (name='netifaces',
+setup (name='netifaces-binary',
        version=__version__,
        zip_safe=True,
        description="Portable network interface information.",
